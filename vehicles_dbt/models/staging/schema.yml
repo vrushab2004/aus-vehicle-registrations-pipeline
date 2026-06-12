@@ -1,0 +1,30 @@
+version: 2
+
+models:
+  - name: stg_vehicles
+    description: "Cleaned and renamed vehicle registration data for March 2026"
+    columns:
+      - name: make
+        description: "Cleaned vehicle brand name e.g. TOYOTA, FORD"
+        tests:
+          - not_null
+
+      - name: model
+        description: "Vehicle model name"
+        tests:
+          - not_null
+
+      - name: color_code
+        description: "3 letter colour code e.g. WHI, BLK, SIL"
+        tests:
+          - not_null
+
+      - name: manufacture_year
+        description: "Year the vehicle was manufactured"
+        tests:
+          - not_null
+
+      - name: units_registered
+        description: "Number of vehicles registered in March 2026"
+        tests:
+          - not_null

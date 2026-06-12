@@ -1,0 +1,80 @@
+[0m22:10:33.209379 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FA76637F80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FA7718E060>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FA7714AFF0>]}
+
+
+============================== 22:10:33.226066 | 3074a8f0-4423-441e-a30d-8a76d0c750a1 ==============================
+[0m22:10:33.226066 [info ] [MainThread]: Running with dbt=1.11.11
+[0m22:10:33.226066 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\vrush_q0qp49n\\.dbt', 'invocation_command': 'dbt init vehicles_dbt', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m22:10:33.282114 [debug] [MainThread]: Starter project path: C:\Users\vrush_q0qp49n\AppData\Roaming\Python\Python312\site-packages\dbt\include\starter_project
+[0m22:10:33.326165 [info ] [MainThread]: 
+Your new dbt project "vehicles_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m22:10:33.326165 [info ] [MainThread]: Setting up your profile.
+[0m22:12:31.163031 [error] [MainThread]: Encountered an error:
+list index out of range
+[0m22:12:31.201724 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\vrush_q0qp49n\AppData\Roaming\Python\Python312\site-packages\dbt\cli\requires.py", line 182, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vrush_q0qp49n\AppData\Roaming\Python\Python312\site-packages\dbt\cli\requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vrush_q0qp49n\AppData\Roaming\Python\Python312\site-packages\dbt\cli\main.py", line 488, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "C:\Users\vrush_q0qp49n\AppData\Roaming\Python\Python312\site-packages\dbt\task\init.py", line 346, in run
+    self.setup_profile(profile_name)
+  File "C:\Users\vrush_q0qp49n\AppData\Roaming\Python\Python312\site-packages\dbt\task\init.py", line 262, in setup_profile
+    self.create_profile_from_target(adapter, profile_name=profile_name)
+  File "C:\Users\vrush_q0qp49n\AppData\Roaming\Python\Python312\site-packages\dbt\task\init.py", line 179, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+  File "C:\Users\vrush_q0qp49n\AppData\Roaming\Python\Python312\site-packages\dbt\task\init.py", line 163, in create_profile_from_profile_template
+    target = self.generate_target_from_input(prompts, initial_target)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vrush_q0qp49n\AppData\Roaming\Python\Python312\site-packages\dbt\task\init.py", line 114, in generate_target_from_input
+    choice = option_list[numeric_choice - 1]
+             ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+IndexError: list index out of range
+
+[0m22:12:31.201724 [debug] [MainThread]: Command `dbt init` failed at 22:12:31.201724 after 118.21 seconds
+[0m22:12:31.201724 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FA7707ABA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FA12518770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FA1246C080>]}
+[0m22:12:31.201724 [debug] [MainThread]: Flushing usage events
+[0m22:12:33.095701 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:13:03.212022 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E664C836B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E6646E4140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E6648476E0>]}
+
+
+============================== 22:13:03.213418 | a8fd6853-e983-4614-afd7-d2afcca8cf72 ==============================
+[0m22:13:03.213418 [info ] [MainThread]: Running with dbt=1.11.11
+[0m22:13:03.213418 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\vrush_q0qp49n\\.dbt', 'indirect_selection': 'eager', 'invocation_command': 'dbt init vehicles_dbt --skip-profile-setup', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m22:13:03.267482 [info ] [MainThread]: A project called vehicles_dbt already exists here.
+[0m22:13:03.269005 [debug] [MainThread]: Command `dbt init` succeeded at 22:13:03.269005 after 0.26 seconds
+[0m22:13:03.269005 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E663B7A450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E66465FFE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E665EB67E0>]}
+[0m22:13:03.269005 [debug] [MainThread]: Flushing usage events
+[0m22:13:04.781382 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:53:52.601279 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028D3D9336B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028D3CEBB830>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028D3CEBB7A0>]}
+
+
+============================== 10:53:52.637721 | c07bd36d-0244-43be-950a-3b2b9effb40d ==============================
+[0m10:53:52.637721 [info ] [MainThread]: Running with dbt=1.11.11
+[0m10:53:52.638611 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\vrush_q0qp49n\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt run', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m10:53:52.639778 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path V:\Projects\Portfolio\aus_vehicle_rego\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m10:53:52.642781 [debug] [MainThread]: Command `dbt run` failed at 10:53:52.641777 after 0.32 seconds
+[0m10:53:52.643785 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028D3D88C170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028D3D44CD40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028D3C7EAAE0>]}
+[0m10:53:52.643785 [debug] [MainThread]: Flushing usage events
+[0m10:53:54.614828 [debug] [MainThread]: An error was encountered while trying to flush usage events

@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: vehicles
+    database: wages-pipeline
+    schema: vehicles
+    tables:
+      - name: vehicles_raw
